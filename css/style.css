@@ -6,27 +6,36 @@ body {
   background-color: rgb(65, 57, 57);
   color: white;
 }
-.scores {
+
+/*both of these require the exact same styling so theres no point in splitting them*/
+.scores,
+.settingsInputs {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  flex-wrap: row wrap;
+  align-items: stretch;
+  gap: 2em; /* i'm using EM as a scaling tool since it makes everything relative to the body */
+  margin-bottom: 2em;
 }
-.scores currentMode {
-  align-self: flex-start;
-}
+/*container for colored buttons, 2x2 grid*/
 .buttonGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 20em;
-  height: 20em;
-  gap: 0.2em;
+  grid-template-rows: repeat(2, 1fr);
+  width: 30em;
+  height: 30em;
+  gap: 1em;
+  margin-bottom: 2em;
 }
+/*universal style for the colored game buttons*/
 .buttonGrid button {
-  width: 1fr;
-  height: 1fr;
-  border: 0px;
+  display: grid;
+  place-items: center;
+  width: 100%; /*adjusts perfectly without breaking. Maybe add a scale feature for accessibility, could be neat. */
+  height: 100%;
+  border-style: solid; /* without this the border is weird half-gray half black split down the diagonal */
+  border-width: 0.5em;
+  border-color: black;
+  cursor: pointer;
 }
 .game-green {
   background-color: #0f0;
