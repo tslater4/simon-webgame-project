@@ -4,21 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simon</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Simon Game</h1>
+    <header>
+      <h1>Simon Game</h1>
+    </header>
     <div class="scores">
       <h2 class="currentMode">Current Mode: Normal</h2>
       <h2 class="currentScore">Your Score: 0</h2>
       <h2 class="highScore">High Score: 0</h2>
-      <h2 class="youLose"></h2>
     </div>
     <div class="buttonGrid">
-      <button class="game-green"></button>
-      <button class="game-red"></button>
-      <button class="game-blue"></button>
-      <button class="game-yellow"></button>
+      <button class="gameButton" id="game-green"></button>
+      <button class="gameButton" id="game-red"></button>
+      <button class="gameButton" id="game-blue"></button>
+      <button class="gameButton" id="game-yellow"></button>
     </div>
     <div class="settingsInputs">
       <button class="startButton">START</button>

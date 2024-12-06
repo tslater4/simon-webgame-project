@@ -3,19 +3,34 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0;
+  padding: 0;
   background-color: rgb(65, 57, 57);
   color: white;
+  font-family: "Montserrat", serif;
 }
 
 /*both of these require the exact same styling so theres no point in splitting them*/
 .scores,
 .settingsInputs {
   display: flex;
-  flex-wrap: row wrap;
-  align-items: stretch;
-  gap: 2em; /* i'm using EM as a scaling tool since it makes everything relative to the body */
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1em;
   margin-bottom: 2em;
+  text-align: center;
 }
+.scores .currentMode {
+  flex-basis: 100%;
+  width: 100%;
+  justify-self: center;
+}
+/*the start and strict buttons*/
+.settingsInputs button {
+  height: 3em;
+  width: 6em;
+  cursor: pointer;
+}
+
 /*container for colored buttons, 2x2 grid*/
 .buttonGrid {
   display: grid;
@@ -26,6 +41,7 @@ body {
   gap: 1em;
   margin-bottom: 2em;
 }
+
 /*universal style for the colored game buttons*/
 .buttonGrid button {
   display: grid;
@@ -34,25 +50,35 @@ body {
   height: 100%;
   border-style: solid; /* without this the border is weird half-gray half black split down the diagonal */
   border-width: 0.5em;
-  border-color: black;
   cursor: pointer;
 }
-.game-green {
+
+/*while any gameplay button is heldit glows white*/
+.buttonGrid button:active {
+  background-color: white;
+}
+
+#game-green {
   background-color: #0f0;
   border-top-left-radius: 100%;
 }
 
-.game-red {
+#game-red {
   background-color: #f00;
   border-top-right-radius: 100%;
 }
 
-.game-blue {
+#game-blue {
   background-color: #00f;
   border-bottom-left-radius: 100%;
 }
 
-.game-yellow {
+#game-yellow {
   background-color: #ff0;
   border-bottom-right-radius: 100%;
+}
+
+.glow {
+  background-color: whitesmoke;
+  filter: brightness(150%);
 }
