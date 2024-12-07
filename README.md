@@ -18,3 +18,6 @@ CSS,
 JS,
 ChatGPT (for debugging),
 Audacity for Sound Editing
+
+Stretch Goals:
+Implement Howl to cache sounds before they play
