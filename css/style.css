@@ -8,7 +8,13 @@ body {
   color: white;
   font-family: "Montserrat", serif;
 }
-
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+  text-align: center;
+}
 /*both of these require the exact same styling so theres no point in splitting them*/
 .scores,
 .settingsInputs {
@@ -19,7 +25,8 @@ body {
   margin-bottom: 2em;
   text-align: center;
 }
-.scores .currentMode {
+/*puts gamestate on its own line for clarity*/
+.scores .gameState {
   flex-basis: 100%;
   width: 100%;
   justify-self: center;
@@ -48,14 +55,9 @@ body {
   place-items: center;
   width: 100%; /*adjusts perfectly without breaking. Maybe add a scale feature for accessibility, could be neat. */
   height: 100%;
-  border-style: solid; /* without this the border is weird half-gray half black split down the diagonal */
+  border-style: solid;
   border-width: 0.5em;
   cursor: pointer;
-}
-
-/*while any gameplay button is heldit glows white*/
-.buttonGrid button:active {
-  background-color: white;
 }
 
 #game-green {
@@ -78,7 +80,21 @@ body {
   border-bottom-right-radius: 100%;
 }
 
+/* does an animation where the button darkens a bit when it is called */
 .glow {
-  background-color: whitesmoke;
-  filter: brightness(150%);
+  animation: glow-animation 0.5s ease-in-out;
+}
+
+@keyframes glow-animation {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

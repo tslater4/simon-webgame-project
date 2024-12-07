@@ -7,17 +7,23 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
-
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
       <h1>Simon Game</h1>
+      <h2>
+        Simon is a memory game where you earn a point for being able to match
+        the pattern pressed by the computer. Every correct round, a new color is
+        added! In normal mode you get unlimited tries, but in strict mode one
+        failure ends your game.
+      </h2>
     </header>
     <div class="scores">
-      <h2 class="currentMode">Current Mode: Normal</h2>
       <h2 class="currentScore">Your Score: 0</h2>
+      <h2 class="currentMode">Current Mode: Normal</h2>
       <h2 class="highScore">High Score: 0</h2>
+      <h2 class="gameState">Press start to begin!</h2>
     </div>
     <div class="buttonGrid">
       <button class="gameButton" id="game-green"></button>
