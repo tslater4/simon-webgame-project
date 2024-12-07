@@ -1,4 +1,4 @@
-# simon-webgame-project
+# The Simon Memory Game
 ![Simon Game Screenshot](https://github.com/user-attachments/assets/68a1f8b2-12d5-4c4a-a02b-cfef18174d54)
 
 A web version of the memory game Simon, where you memorize and repeat back a pattern of colors chosen by the computer that becomes longer as rounds go on. Features sound, basic animation, a difficulty toggle, and a scoring system.
