@@ -10,11 +10,11 @@ Planning Material:
 https://docs.google.com/document/d/1AeUccCT2kKqhEmbw80KnsmMOUuSUTwq2PaACkMshWMc/edit?usp=sharing
 
 Attributions:
-Beeping sound effects come from this youtube video: https://youtu.be/1Yqj76Q4jJ4
+Beeping sound effects come from this YouTube video: https://youtu.be/1Yqj76Q4jJ4
 
 Technologies Used:
--HTML
--CSS
--JS
--ChatGPT (for debugging)
--Audacity for Sound Editing
+HTML,
+CSS,
+JS,
+ChatGPT (for debugging),
+Audacity for Sound Editing
