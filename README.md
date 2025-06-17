@@ -11,6 +11,7 @@ https://docs.google.com/document/d/1AeUccCT2kKqhEmbw80KnsmMOUuSUTwq2PaACkMshWMc/
 
 Attributions:
 Beeping sound effects come from this YouTube video: https://youtu.be/1Yqj76Q4jJ4
+SVG's from svgrepo https://www.svgrepo.com/svg/486907/warning, https://www.svgrepo.com/svg/144497/power-button
 
 Technologies Used:
 HTML,
