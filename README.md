@@ -17,7 +17,6 @@ Technologies Used:
 HTML,
 CSS,
 JS,
-ChatGPT (for debugging),
 Audacity for Sound Editing
 
 Stretch Goals:
